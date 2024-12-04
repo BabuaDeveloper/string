@@ -1,0 +1,109 @@
+<?php
+
+namespace App\Http\Controllers\Tiktok;
+
+use Illuminate\Http\Request;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Http;
+
+class TikTokAuthController extends Controller
+{
+    protected $clientId;
+    protected $clientSecret;
+    protected $redirectUri;
+    protected $apiUrl;
+
+    public function __construct(){
+        $this->clientId = env('TIKTOK_CLIENT_KEY');
+        $this->clientSecret = env('TIKTOK_CLIENT_SECRET');
+        $this->redirectUri = env('TIKTOK_REDIRECT_URI');
+        $this->apiUrl = env('TIKTOK_API_URL');
+    }
+    
+    public function login(){
+        $url = "https://business-api.tiktok.com/portal/auth?app_id=".$this->clientId."&state=you_custom_params&redirect_uri=".$this->redirectUri;
+        //echo $url;die;
+        return redirect($url);
+        // $query = http_build_query([
+        //     'app_id' => $this->clientId,
+        //     'redirect_uri' => $this->redirectUri,
+        //     'response_type' => 'code',
+        //     'scope' => 'business_management', // Add the scopes your app needs
+        //     'state' => csrf_token(), // Optional state parameter for security
+        // ]);
+        // return redirect('https://business-api.tiktok.com/portal/auth?' . $query);
+    }
+    
+    public function callback(Request $request){
+
+        
+            $auth_code = $_GET['code']; // Authorization code from TikTok
+            
+            //$state = $_GET['state']; // Optional, for CSRF validation if used
+        
+            $client_id = $this->clientId;
+            $client_secret = $this->clientSecret;
+            $redirect_uri = $this->redirectUri;
+        
+            // TikTok API endpoint to exchange the code for an access token
+            $token_url = "https://business-api.tiktok.com/open_api/v1.2/oauth2/access_token/";
+        
+            // Prepare POST data
+            $post_data = [
+                'app_id' => $client_id,
+                'secret' => $client_secret,
+                'auth_code' => $auth_code,
+            ];
+            //echo json_encode($post_data);
+            //echo '<pre>';print_r($post_data);die;
+            // Initialize cURL
+            $ch = curl_init($token_url);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_data));
+        
+            // Execute the request
+            $response = curl_exec($ch);
+            curl_close($ch);
+        
+            // Decode the JSON response
+            //echo $response;die;
+            $data = json_decode($response, true);
+            //echo '<pre>';print_r($data);die;
+            if (isset($data['data']['access_token'])) {
+                $access_token = $data['data']['access_token'];
+                //echo "Access Token: " . $access_token;
+                return response()->json($data);
+        
+                // Save the access token for future API calls
+            } else {
+                echo "Error: " . $data['message'];
+            }
+        
+        
+
+    }
+    
+    
+    public function callback2(Request $request){
+        $code = $request->get('code');
+        // Exchange the authorization code for an access token
+        $response = Http::asForm()->post('https://open.tiktokapis.com/v2/oauth/token/', [
+            'client_key' => $this->clientId,
+            'client_secret' => $this->clientSecret,
+            'code' => $code,
+            'grant_type' => 'authorization_code',
+            'redirect_uri' => $this->redirectUri,
+        ]);
+        $data = $response->json();
+        echo '<pre>';print_r($data);die;
+        if ($response->failed()) {
+            return response()->json(['error' => 'Failed to retrieve access token', 'details' => $data], 400);
+        }
+        return response()->json([
+            'message' => 'Tiktok authentication successfully',
+            'data' => $data,
+        ]);
+    }
+}

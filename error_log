@@ -1,0 +1,82 @@
+[10-Nov-2024 10:41:02 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\FacebookAdsController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Facebook/FacebookAdsController.php on line 8
+[10-Nov-2024 10:43:22 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\FacebookAdsController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Facebook/FacebookAdsController.php on line 8
+[10-Nov-2024 10:54:57 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\DemoController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Facebook/Controllers/DemoController.php on line 7
+[10-Nov-2024 10:55:44 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\DemoController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Facebook/Controllers/DemoController.php on line 7
+[10-Nov-2024 10:57:08 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\DemoController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Facebook/Controllers/DemoController.php on line 7
+[10-Nov-2024 18:25:16 UTC] PHP Fatal error:  Trait "Illuminate\Console\Prohibitable" not found in /home/citexmy/public_html/string/vendor/nwidart/laravel-modules/src/Commands/BaseCommand.php on line 18
+[10-Nov-2024 18:26:27 UTC] PHP Fatal error:  Trait "Illuminate\Console\Prohibitable" not found in /home/citexmy/public_html/string/vendor/nwidart/laravel-modules/src/Commands/BaseCommand.php on line 18
+[16-Nov-2024 05:51:10 UTC] PHP Fatal error:  Trait "Illuminate\Console\Prohibitable" not found in /home/citexmy/public_html/string/vendor/nwidart/laravel-modules/src/Commands/BaseCommand.php on line 18
+[16-Nov-2024 05:51:49 UTC] PHP Fatal error:  Trait "Illuminate\Console\Prohibitable" not found in /home/citexmy/public_html/string/vendor/nwidart/laravel-modules/src/Commands/BaseCommand.php on line 18
+[16-Nov-2024 05:53:39 UTC] PHP Fatal error:  Trait "Illuminate\Console\Prohibitable" not found in /home/citexmy/public_html/string/vendor/nwidart/laravel-modules/src/Commands/BaseCommand.php on line 18
+[16-Nov-2024 06:37:10 UTC] PHP Fatal error:  Trait "Illuminate\Console\Prohibitable" not found in /home/citexmy/public_html/string/vendor/nwidart/laravel-modules/src/Commands/BaseCommand.php on line 18
+[16-Nov-2024 06:40:07 UTC] PHP Fatal error:  Trait "Illuminate\Console\Prohibitable" not found in /home/citexmy/public_html/string222/vendor/nwidart/laravel-modules/src/Commands/BaseCommand.php on line 18
+[16-Nov-2024 06:42:13 UTC] PHP Fatal error:  Trait "Illuminate\Console\Prohibitable" not found in /home/citexmy/public_html/string/vendor/nwidart/laravel-modules/src/Commands/BaseCommand.php on line 18
+[16-Nov-2024 06:51:11 UTC] PHP Fatal error:  Trait "Illuminate\Console\Prohibitable" not found in /home/citexmy/public_html/string/vendor/nwidart/laravel-modules/src/Commands/BaseCommand.php on line 18
+[16-Nov-2024 06:51:52 UTC] PHP Fatal error:  Trait "Illuminate\Console\Prohibitable" not found in /home/citexmy/public_html/string/vendor/nwidart/laravel-modules/src/Commands/BaseCommand.php on line 18
+[16-Nov-2024 06:52:14 UTC] PHP Fatal error:  Trait "Illuminate\Console\Prohibitable" not found in /home/citexmy/public_html/string/vendor/nwidart/laravel-modules/src/Commands/BaseCommand.php on line 18
+[16-Nov-2024 06:55:19 UTC] PHP Warning:  require(/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php): Failed to open stream: No such file or directory in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:55:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/citexmy/public_html/string/vendor/composer/autoload_real.php:39
+Stack trace:
+#0 /home/citexmy/public_html/string/vendor/composer/autoload_real.php(43): {closure}('9f394da3192a168...', '/home/citexmy/p...')
+#1 /home/citexmy/public_html/string/vendor/autoload.php(25): ComposerAutoloaderInitfe33f98a750b8c5a51b30c78bd3fab21::getLoader()
+#2 /home/citexmy/public_html/string/artisan(18): require('/home/citexmy/p...')
+#3 {main}
+  thrown in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:55:22 UTC] PHP Warning:  require(/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php): Failed to open stream: No such file or directory in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:55:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/citexmy/public_html/string/vendor/composer/autoload_real.php:39
+Stack trace:
+#0 /home/citexmy/public_html/string/vendor/composer/autoload_real.php(43): {closure}('9f394da3192a168...', '/home/citexmy/p...')
+#1 /home/citexmy/public_html/string/vendor/autoload.php(25): ComposerAutoloaderInitfe33f98a750b8c5a51b30c78bd3fab21::getLoader()
+#2 /home/citexmy/public_html/string/artisan(18): require('/home/citexmy/p...')
+#3 {main}
+  thrown in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:55:26 UTC] PHP Warning:  require(/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php): Failed to open stream: No such file or directory in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:55:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/citexmy/public_html/string/vendor/composer/autoload_real.php:39
+Stack trace:
+#0 /home/citexmy/public_html/string/vendor/composer/autoload_real.php(43): {closure}('9f394da3192a168...', '/home/citexmy/p...')
+#1 /home/citexmy/public_html/string/vendor/autoload.php(25): ComposerAutoloaderInitfe33f98a750b8c5a51b30c78bd3fab21::getLoader()
+#2 /home/citexmy/public_html/string/artisan(18): require('/home/citexmy/p...')
+#3 {main}
+  thrown in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:55:36 UTC] PHP Warning:  require(/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php): Failed to open stream: No such file or directory in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:55:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/citexmy/public_html/string/vendor/composer/autoload_real.php:39
+Stack trace:
+#0 /home/citexmy/public_html/string/vendor/composer/autoload_real.php(43): {closure}('9f394da3192a168...', '/home/citexmy/p...')
+#1 /home/citexmy/public_html/string/vendor/autoload.php(25): ComposerAutoloaderInitfe33f98a750b8c5a51b30c78bd3fab21::getLoader()
+#2 /home/citexmy/public_html/string/artisan(18): require('/home/citexmy/p...')
+#3 {main}
+  thrown in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:56:07 UTC] PHP Warning:  require(/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php): Failed to open stream: No such file or directory in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:56:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/citexmy/public_html/string/vendor/composer/autoload_real.php:39
+Stack trace:
+#0 /home/citexmy/public_html/string/vendor/composer/autoload_real.php(43): {closure}('9f394da3192a168...', '/home/citexmy/p...')
+#1 /home/citexmy/public_html/string/vendor/autoload.php(25): ComposerAutoloaderInitfe33f98a750b8c5a51b30c78bd3fab21::getLoader()
+#2 /home/citexmy/public_html/string/artisan(18): require('/home/citexmy/p...')
+#3 {main}
+  thrown in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:56:13 UTC] PHP Warning:  require(/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php): Failed to open stream: No such file or directory in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:56:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/citexmy/public_html/string/vendor/composer/autoload_real.php:39
+Stack trace:
+#0 /home/citexmy/public_html/string/vendor/composer/autoload_real.php(43): {closure}()
+#1 /home/citexmy/public_html/string/vendor/autoload.php(25): ComposerAutoloaderInitfe33f98a750b8c5a51b30c78bd3fab21::getLoader()
+#2 /home/citexmy/public_html/string/index.php(34): require('/home/citexmy/p...')
+#3 {main}
+  thrown in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:56:16 UTC] PHP Warning:  require(/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php): Failed to open stream: No such file or directory in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[16-Nov-2024 06:56:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/citexmy/public_html/string/vendor/composer/../nwidart/laravel-modules/src/helpers.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/citexmy/public_html/string/vendor/composer/autoload_real.php:39
+Stack trace:
+#0 /home/citexmy/public_html/string/vendor/composer/autoload_real.php(43): {closure}()
+#1 /home/citexmy/public_html/string/vendor/autoload.php(25): ComposerAutoloaderInitfe33f98a750b8c5a51b30c78bd3fab21::getLoader()
+#2 /home/citexmy/public_html/string/index.php(34): require('/home/citexmy/p...')
+#3 {main}
+  thrown in /home/citexmy/public_html/string/vendor/composer/autoload_real.php on line 39
+[18-Nov-2024 09:17:23 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\Snapchat\SubControllers\AuthController as AuthController because the name is already in use in /home/citexmy/public_html/string/routes/api.php on line 12
+[18-Nov-2024 11:30:01 UTC] PHP Fatal error:  Cannot declare class AuthController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Tiktok/SubControllers/AuthController.php on line 7
+[18-Nov-2024 11:41:12 UTC] PHP Fatal error:  Cannot declare class AuthController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Tiktok/SubControllers/AuthController.php on line 7
+[18-Nov-2024 11:42:21 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\Tiktok\SubControllers\TiktokController as TiktokController because the name is already in use in /home/citexmy/public_html/string/routes/web.php on line 7
+[18-Nov-2024 12:09:25 UTC] PHP Fatal error:  Cannot use GuzzleHttp\Client as Client because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Tiktok/TikTokAuthController.php on line 8
+[18-Nov-2024 18:27:32 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\TikTokController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Tiktok/TikTokController.php on line 7
+[19-Nov-2024 04:14:57 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\FacebookController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Facebook/FacebookController.php on line 10
+[19-Nov-2024 04:21:43 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\FacebookController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Facebook/FacebookController.php on line 10
+[19-Nov-2024 04:22:52 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\FacebookController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Facebook/FacebookController.php on line 10
+[19-Nov-2024 04:27:30 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\FacebookAdsController, because the name is already in use in /home/citexmy/public_html/string/app/Http/Controllers/Facebook/FacebookAdsController.php on line 9
